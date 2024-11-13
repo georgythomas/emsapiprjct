@@ -4,7 +4,7 @@ from django.contrib.auth.models import User,Group
 from django.contrib.auth.hashers import make_password
 
 class SignupSerializer(serializers.ModelSerializer):
-    #we will receive username,password and grup name
+    #we will receive username hi ,password and grup name
     #at first take grup name and save in variable
     #remove it from list
     group_name = serializers.CharField(write_only=True,required=False)
